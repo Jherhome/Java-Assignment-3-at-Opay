@@ -12,6 +12,9 @@ public class SalesComCal {
         System.out.printf("Enter Weekly Pay (or -1 to quit)  %n");
         System.out.print("Enter weekly pay: ");
         weeklyPay = scanner.nextFloat();
+        if(weeklyPay==-1){
+            return;
+        }
        
         System.out.print("Enter Commission Percentage: ");
         commissionPercentage = scanner.nextFloat();
